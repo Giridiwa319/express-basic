@@ -1,9 +1,11 @@
 # Catatan
 1. Sequelize
     a. Install Sequelize dari awal 
+        
         `npm install sequelize-cli init `
 
     b. Create Database 
+        
         `npx sequelize db:create`
 
         <!> Perlu di perhatikan : Jika ingin menjalankan perintah db create di atas pastikan kalian sudah menulis nama databasenya di config.json 

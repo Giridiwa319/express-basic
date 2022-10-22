@@ -2,6 +2,7 @@
 1. Sequelize
     a. Install Sequelize dari awal 
         `npm install sequelize-cli init `
+
     b. Create Database 
         `npx sequelize db:create`
 

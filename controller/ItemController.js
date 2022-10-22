@@ -1,7 +1,7 @@
-const {item} = require('../models')
+const { item } = require('../models')
 
-class ItemController{
-    static getItems(req,res){
+class ItemController {
+    static getItems(req, res) {
         item.findAll()
         .then((result)=>{
                 res.send(result);
@@ -9,17 +9,18 @@ class ItemController{
         .catch((err) => {
             res.send(err)
         });
+       
     }
-    static create(req,res){
+    static create(req, res) {
         //
     }
-    static update(req,res){
+    static update(req, res) {
         //
     }
-    static delete(req,res){
+    static delete(req, res) {
         //
     }
-    static getInfoById(req,res){
+    static getInfoById(req, res) {
         //
     }
 }

@@ -1,7 +1,14 @@
+const {item} = require('../models')
 
 class ItemController{
     static getItems(req,res){
-        res.send('Item Page')
+        item.findAll()
+        .then((result)=>{
+                res.send(result);
+            })
+        .catch((err) => {
+            res.send(err)
+        });
     }
     static create(req,res){
         //

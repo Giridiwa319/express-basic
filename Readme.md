@@ -39,18 +39,18 @@
 
     C. Buat Migration Database
     
-        `npx sequelize-cli model:generate --name item 
-        --attribute name:string,price:integer,type:string,stock:integer,image:string`
+        npx sequelize-cli model:generate --name item 
+        --attribute name:string,price:integer,type:string,stock:integer,image:string
         
-        `npx sequelize-cli model:generate --name user --attributes username:string, email:string, password:string, role:string,image:string`
+        npx sequelize-cli model:generate --name user --attributes username:string, email:string, password:string, role:string,image:string
     
     D.Buat Migration
      
      `npx sequelize-cli db:migrate`
      
-    E. Menghaous Database Yang salah.
+    E. Menghapus Database Yang salah.
         
-        `npx sequelize-cli db:migrate:undo:all`
+        npx sequelize-cli db:migrate:undo:all
         
     F. Terakhir Buka di Dbeaver kalian.
      
